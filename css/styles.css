@@ -6,3 +6,11 @@ form{
 input [type="submit"]{
 	font-size: 5.25 em;
 }
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
