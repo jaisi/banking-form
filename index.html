@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Banking Form</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+<form action="test.php" method="post">
+	<fieldset>
+		<legend>Contact info</legend>
+		<label>First Name: <input type="text" name="first-name" size="15" maxlength="30"></label>
+		<label>Middle Initial: <input type="text" name="middle" size="1" maxlength="30"></label>
+		<label>Last Name: <input type="text" name="last-name" size="15" maxlength="30"></label>
+		<br>
+		<label>Address: <input type="text" name="address" size="15" maxlength="30"></label>
+		<label>Occupation: <input type="text" name="occupation" size="15" maxlength="30"></label>
+	</fieldset>
+	<fieldset>
+		<legend>Employer Information</legend>
+		<label>Employer Name: </label><input type="text" name="emp-name" size="15" maxlength="30">
+		<label>Employer Address: </label><input type="text" name="emp-address" size="15" maxlength="30">
+		
+	</fieldset>
+	<fieldset>
+		<legend>Loan Details</legend>
+		<label>Type of Loan: </label>
+			<select name="loan-type"><option value="com">Commercial</option>
+									 <option value="real">Real Estate</option>
+									<option value="pers"> Personal </option>
+									<option value="mort">Mortgage</option>
+			</select>
+		<br><br>
+		<label>Loan Amount: </label><input type="text" name="loan-amt" size="15" maxlength="30">
+		<br><br>
+		<label>Loan Length: </label><input type="radio" name="loan-length" value="5">5 years
+									<input type="radio" name="loan-length" value="15">15 years
+									<input type="radio" name="loan-length" value="30">30 years
+	</fieldset>
+	<fieldset>
+		<legend>Additional Information</legend>
+		<label>Special Conditions: </label>
+		<br>
+			<input type = "checkbox" name="spec-conditions" value="down">I have a down payment
+			<input type="checkbox" name="spec-conditions" value="Out-of-state">Out-of-state resident
+			<input type="checkbox" name="spec-conditions" value="Married">Married
+			<input type="checkbox" name="spec-conditions" value="loan-cosigned">Loan will be cosigned
+			<br><br>
+		<label>Additional Comments: </label><br><textarea name="message" rows="4" cols="30"></textarea>
+		<br><br>
+		<label>Applicant Email: </label><input type="text" name="email" size="15" maxlength="30"></label>
+		<label>Applicant Phone Number: </label><input type="text" name="phone" size="15" maxlength="30"></label>
+		<br>
+		<label>Applicant LinkedIn URL: </label><input type="text" name="linkedin" size="15" maxlength="30"></label>
+	</fieldset>
+	<br>
+	<br>
+	<input type="submit" value="Save Banking Form">
+</form>
+	
